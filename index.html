@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohammed Shaheed Akeel | Data Scientist & Machine Learning Engineer</title>
+  <meta name="description" content="Portfolio of Mohammed Shaheed Akeel - Data Scientist specializing in Machine Learning, Generative AI, RAG Pipelines, and Time Series Demand Forecasting.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Magnetic Cursor -->
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <!-- Floating Frosted Glass Navigation Pill -->
+  <header class="navbar-wrapper">
+    <nav class="nav-pill" id="navPill" aria-label="Main Navigation">
+      <a href="#hero" class="nav-brand" aria-label="Mohammed Shaheed Akeel Home">
+        <span class="brand-monogram">SA</span>
+      </a>
+      <div class="nav-links">
+        <a href="#work" class="nav-link" id="navLinkWork">WORK</a>
+        <a href="#about" class="nav-link" id="navLinkAbout">ABOUT</a>
+        <a href="#skills" class="nav-link" id="navLinkSkills">SKILLS</a>
+        <a href="#contact" class="nav-link" id="navLinkContact">CONTACT</a>
+      </div>
+      <button class="nav-cta-btn" id="navResumeBtn" aria-label="Open Resume Modal">
+        <span>RESUME</span>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Hero Section with Cursor-Tracking 3D Character Canvas -->
+  <section class="hero-section" id="hero">
+    <!-- Seamless 60FPS Canvas Background -->
+    <div class="canvas-container" id="canvasContainer">
+      <canvas id="heroCanvas" class="hero-canvas"></canvas>
+      <!-- Preloader Indicator -->
+      <div class="canvas-loader" id="canvasLoader">
+        <div class="loader-spinner"></div>
+        <span class="loader-text" id="loaderText">Loading 3D Experience 0%</span>
+      </div>
+    </div>
+
+    <!-- Hero Content Overlay (Bottom-Left) -->
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="pulse-indicator"></span>
+        <span class="eyebrow-text">Hi, I'm</span>
+      </div>
+      <h1 class="hero-title">Mohammed Shaheed Akeel</h1>
+      <div class="hero-role-badge">
+        <span>DATA SCIENTIST</span>
+        <span class="role-separator">•</span>
+        <span>MACHINE LEARNING</span>
+        <span class="role-separator">•</span>
+        <span>DEMAND FORECASTING</span>
+      </div>
+      <p class="hero-bio">
+        A motivated Data Science graduate with a strong focus on Machine Learning, predictive modeling, and scalable Generative AI solutions that turn complex datasets into actionable impact.
+      </p>
+      <div class="hero-actions">
+        <button class="btn-pill btn-solid-white" id="heroResumeBtn" aria-label="View Resume">
+          <span>Resume</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+        </button>
+        <a href="#contact" class="btn-pill btn-glass-white" id="heroContactBtn" aria-label="Navigate to contact">
+          <span>Let's Talk</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Interaction Cue Badge (Bottom-Right) -->
+    <div class="hero-hint-badge" id="heroHintBadge">
+      <div class="hint-icon">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+      </div>
+      <div class="hint-text">
+        <strong>Cursor-Tracking 3D Hero</strong>
+        <span>Move your cursor • Hover near face for direct eye contact</span>
+      </div>
+    </div>
+
+    <!-- Scroll Down Pill -->
+    <a href="#work" class="scroll-indicator" aria-label="Scroll to projects">
+      <span class="scroll-mouse">
+        <span class="scroll-wheel"></span>
+      </span>
+      <span class="scroll-label">Explore</span>
+    </a>
+  </section>
+
+  <!-- Main Content Wrapper -->
+  <main class="main-content">
+
+    <!-- Section 1: Featured Work / Projects -->
+    <section class="section-container" id="work">
+      <div class="section-header">
+        <div class="section-tag">PORTFOLIO SHOWCASE</div>
+        <h2 class="section-heading">Featured Engineering Projects</h2>
+        <p class="section-subheading">
+          Real-world applications in Generative AI, Predictive Machine Learning, and Time Series Forecasting built with scalable architectures.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: News Research Tool -->
+        <article class="project-card" data-project="nrt">
+          <div class="project-card-glow"></div>
+          <div class="project-header">
+            <span class="project-badge badge-genai">GenAI • RAG Pipeline</span>
+            <div class="project-links">
+              <a href="https://github.com/SHAHEED-AKEEL" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GitHub Repository">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">News Research Tool (NRT)</h3>
+          <p class="project-tagline">Semantic Question Answering via Retrieval-Augmented Generation</p>
+          <p class="project-description">
+            Architected an automated news analysis system that ingests multiple live article URLs, splits content into semantically rich chunks, indexes embeddings using FAISS vector storage, and runs an end-to-end RAG pipeline to generate precise, grounded answers with direct source references.
+          </p>
+          <div class="project-highlights">
+            <div class="highlight-item">
+              <span class="highlight-bullet">✓</span>
+              <span>Multi-URL automated web ingestion & document processing</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-bullet">✓</span>
+              <span>Sub-second semantic vector similarity search via FAISS</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-bullet">✓</span>
+              <span>Context-grounded answer generation with source transparency</span>
+            </div>
+          </div>
+          <div class="tech-stack-pills">
+            <span class="tech-pill">Python</span>
+            <span class="tech-pill">Streamlit</span>
+            <span class="tech-pill">LangChain</span>
+            <span class="tech-pill">OpenAI API</span>
+            <span class="tech-pill">FAISS</span>
+            <span class="tech-pill">RAG</span>
+          </div>
+        </article>
+
+        <!-- Project 2: levixbiosciences Website -->
+        <article class="project-card" data-project="levixbiosciences">
+          <div class="project-card-glow"></div>
+          <div class="project-header">
+            <span class="project-badge badge-web">Production Website • Healthcare</span>
+            <div class="project-links">
+              <a href="https://levixbiosciences.com" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="Visit Live Website" title="Live Website">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <a href="https://github.com/SHAHEED-AKEEL/levixbiosciences" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GitHub Repository" title="GitHub Repository">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">levixbiosciences</h3>
+          <p class="project-tagline">Enterprise Pharmaceutical & Formulations Platform (Website)</p>
+          <p class="project-description">
+            Engineered and launched the official production enterprise website for LEVIX Bio Science Pvt Ltd. Built with an ultra-responsive modern architecture, advanced interactive neurological and therapeutic formulations showcase, doctor prescription verification workflows, and seamless direct WhatsApp ordering integration.
+          </p>
+          <div class="project-highlights">
+            <div class="highlight-item">
+              <span class="highlight-bullet">✓</span>
+              <span>Advanced neurological & therapeutic formulation catalog showcase</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-bullet">✓</span>
+              <span>Direct WhatsApp automated ordering & prescription verification workflows</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-bullet">✓</span>
+              <span>SEO-optimized responsive UI with Schema.org JSON-LD structured data</span>
+            </div>
+          </div>
+          <div class="tech-stack-pills">
+            <span class="tech-pill">Website</span>
+            <span class="tech-pill">React</span>
+            <span class="tech-pill">JavaScript</span>
+            <span class="tech-pill">TailwindCSS</span>
+            <span class="tech-pill">Vite</span>
+            <span class="tech-pill">Schema.org</span>
+            <span class="tech-pill">WhatsApp API</span>
+          </div>
+        </article>
+
+        <!-- Project 3: Time Series & Demand Forecasting -->
+        <article class="project-card" data-project="demand-forecast">
+          <div class="project-card-glow"></div>
+          <div class="project-header">
+            <span class="project-badge badge-timeseries">Time Series • Predictive Analytics</span>
+            <div class="project-links">
+              <a href="https://github.com/SHAHEED-AKEEL" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GitHub Repository">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Time Series & Demand Forecasting</h3>
+          <p class="project-tagline">Statistical & Machine Learning Sales Forecasting</p>
+          <p class="project-description">
+            Built an enterprise-grade demand forecasting framework modeling weekly sales volume trends, seasonal spikes, and economic indicators. Implemented classical ARIMA/SARIMA alongside Facebook Prophet and XGBoost with multi-horizon lag and rolling window features, evaluated against RMSE and MAPE.
+          </p>
+          <div class="project-highlights">
+            <div class="highlight-item">
+              <span class="highlight-bullet">✓</span>
+              <span>Trend and seasonal decomposition on multi-year sales data</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-bullet">✓</span>
+              <span>Hybrid modeling with ARIMA, SARIMA, Prophet, and XGBoost</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-bullet">✓</span>
+              <span>Feature engineering: rolling statistics, lag indicators & holiday effects</span>
+            </div>
+          </div>
+          <div class="tech-stack-pills">
+            <span class="tech-pill">Python</span>
+            <span class="tech-pill">Pandas</span>
+            <span class="tech-pill">Statsmodels</span>
+            <span class="tech-pill">Prophet</span>
+            <span class="tech-pill">XGBoost</span>
+            <span class="tech-pill">ARIMA</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Section 2: About & Career Objective -->
+    <section class="section-container" id="about">
+      <div class="section-header">
+        <div class="section-tag">BACKGROUND & ASPIRATIONS</div>
+        <h2 class="section-heading">About Mohammed Shaheed Akeel</h2>
+        <p class="section-subheading">
+          Passionate about transforming statistical hypotheses and complex algorithms into scalable, real-world intelligence.
+        </p>
+      </div>
+
+      <div class="about-bento-grid">
+        <!-- Card 1: Avatar & Bio -->
+        <div class="bento-card bento-profile">
+          <div class="profile-avatar-wrapper">
+            <img src="character.jpeg" alt="Mohammed Shaheed Akeel Avatar" class="profile-avatar-img">
+            <span class="status-badge">
+              <span class="status-dot"></span>
+              <span>Available for Hire</span>
+            </span>
+          </div>
+          <div class="profile-info">
+            <h3 class="profile-name">Mohammed Shaheed Akeel</h3>
+            <p class="profile-role">Data Scientist | Machine Learning Specialist</p>
+            <p class="profile-location">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Bengaluru, India
+            </p>
+            <div class="profile-socials">
+              <a href="https://github.com/SHAHEED-AKEEL" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>GitHub</span>
+              </a>
+              <a href="http://www.linkedin.com/in/mohammed-shaheed-akeel" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                <span>LinkedIn</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Career Objective -->
+        <div class="bento-card bento-objective">
+          <div class="bento-badge">CAREER OBJECTIVE</div>
+          <h4 class="objective-heading">Engineering the Future of Scalable AI</h4>
+          <p class="objective-text">
+            "A motivated Data Science graduate with a strong focus on Machine Learning and Artificial Intelligence, seeking an entry-level role to apply predictive modelling, data analysis, and algorithmic thinking to real-world problems. Eager to gain hands-on industry experience while continuously enhancing expertise in building scalable, data-driven AI solutions."
+          </p>
+          <div class="metrics-row">
+            <div class="metric-box">
+              <span class="metric-number">79%</span>
+              <span class="metric-label">B.E. Computer Science</span>
+            </div>
+            <div class="metric-box">
+              <span class="metric-number">3+</span>
+              <span class="metric-label">Production ML Projects</span>
+            </div>
+            <div class="metric-box">
+              <span class="metric-number">100%</span>
+              <span class="metric-label">Commitment to Impact</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Education Details -->
+        <div class="bento-card bento-education">
+          <div class="bento-badge">ACADEMIC EXCELLENCE</div>
+          <h4 class="objective-heading">Education & Professional Programs</h4>
+          <div class="education-timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-year">Graduated</div>
+                <h5 class="timeline-title">Post Graduate Program in Data Science & Analytics</h5>
+                <p class="timeline-school">Imarticus Learning, Koramangala, Bengaluru</p>
+                <span class="grade-pill">Grade: B</span>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-year">2020 – 2024</div>
+                <h5 class="timeline-title">Bachelor of Engineering (B.E.) in Computer Science</h5>
+                <p class="timeline-school">Al-Ameen Engineering College</p>
+                <span class="grade-pill">Aggregate: 79%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Technical Skills Matrix -->
+    <section class="section-container" id="skills">
+      <div class="section-header">
+        <div class="section-tag">TECHNICAL ARSENAL</div>
+        <h2 class="section-heading">Core Skills & Competencies</h2>
+        <p class="section-subheading">
+          A balanced technical toolkit spanning algorithmic mathematics, deep learning architectures, and production-ready machine learning workflows.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Category 1: Machine Learning -->
+        <div class="skills-category-card">
+          <div class="category-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+          </div>
+          <h3 class="category-title">Machine Learning</h3>
+          <p class="category-desc">Supervised, unsupervised, ensemble modeling, and hyperparameter optimization.</p>
+          <ul class="skill-tags-list">
+            <li>Linear & Logistic Regression</li>
+            <li>Decision Trees & Random Forest</li>
+            <li>XGBoost & Gradient Boosting</li>
+            <li>Time Series Forecasting</li>
+            <li>Clustering (K-Means, DBSCAN)</li>
+            <li>SMOTE Class Balancing</li>
+            <li>Model Tuning (Grid/Random Search)</li>
+            <li>Cross-Validation & ROC-AUC</li>
+          </ul>
+        </div>
+
+        <!-- Category 2: Deep Learning & Generative AI -->
+        <div class="skills-category-card">
+          <div class="category-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+          </div>
+          <h3 class="category-title">Deep Learning & GenAI</h3>
+          <p class="category-desc">LLMs, retrieval-augmented generation pipelines, and vector semantic stores.</p>
+          <ul class="skill-tags-list">
+            <li>Large Language Models (LLMs)</li>
+            <li>LangChain Orchestration</li>
+            <li>Retrieval-Augmented Generation (RAG)</li>
+            <li>FAISS Vector Databases</li>
+            <li>Transformers & Attention</li>
+            <li>OpenAI API Integrations</li>
+            <li>Prompt Engineering & Citations</li>
+            <li>Semantic Chunking & Embeddings</li>
+          </ul>
+        </div>
+
+        <!-- Category 3: Data Analysis & Statistics -->
+        <div class="skills-category-card">
+          <div class="category-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          </div>
+          <h3 class="category-title">Statistics & Data Analysis</h3>
+          <p class="category-desc">Mathematical modeling, inferential statistics, and hypothesis testing.</p>
+          <ul class="skill-tags-list">
+            <li>Probability & Distributions</li>
+            <li>Hypothesis Testing (A/B, p-values)</li>
+            <li>Multivariate Regression Analysis</li>
+            <li>Feature Engineering & Selection</li>
+            <li>Exploratory Data Analysis (EDA)</li>
+            <li>Outlier Detection & Imputation</li>
+            <li>Correlation & Covariance Analysis</li>
+            <li>Statistical Significance Testing</li>
+          </ul>
+        </div>
+
+        <!-- Category 4: Languages & Tools -->
+        <div class="skills-category-card">
+          <div class="category-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3 class="category-title">Languages & Frameworks</h3>
+          <p class="category-desc">Core programming languages, scientific computing, and visualization stacks.</p>
+          <ul class="skill-tags-list">
+            <li>Python (NumPy, Pandas, Scipy)</li>
+            <li>SQL (PostgreSQL, MySQL queries)</li>
+            <li>Scikit-learn</li>
+            <li>Statsmodels & Prophet</li>
+            <li>Streamlit Rapid Web Deployment</li>
+            <li>Git & GitHub Version Control</li>
+            <li>Data Visualizations (Matplotlib, Seaborn)</li>
+            <li>Jupyter & Development Notebooks</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Contact & Let's Talk -->
+    <section class="section-container" id="contact">
+      <div class="section-header">
+        <div class="section-tag">GET IN TOUCH</div>
+        <h2 class="section-heading">Let's Build Something Impactful</h2>
+        <p class="section-subheading">
+          Whether you have an entry-level Data Science role, machine learning project, or collaborative idea, my inbox is always open.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Direct Contact Cards -->
+        <div class="contact-cards-col">
+          <!-- Card: Email -->
+          <div class="contact-info-card">
+            <div class="contact-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="contact-details">
+              <span class="contact-type">EMAIL DIRECT</span>
+              <a href="mailto:shahidshahidakeel@gmail.com" class="contact-val">shahidshahidakeel@gmail.com</a>
+            </div>
+            <button class="copy-pill-btn" data-copy="shahidshahidakeel@gmail.com" aria-label="Copy email address">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+              <span>Copy</span>
+            </button>
+          </div>
+
+          <!-- Card: Phone -->
+          <div class="contact-info-card">
+            <div class="contact-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <div class="contact-details">
+              <span class="contact-type">PHONE</span>
+              <a href="tel:+919944898567" class="contact-val">+91 9944898567</a>
+            </div>
+            <button class="copy-pill-btn" data-copy="+919944898567" aria-label="Copy phone number">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+              <span>Copy</span>
+            </button>
+          </div>
+
+          <!-- Card: Social Links -->
+          <div class="contact-info-card">
+            <div class="contact-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+            </div>
+            <div class="contact-details">
+              <span class="contact-type">PROFESSIONAL NETWORKS</span>
+              <div class="social-links-inline">
+                <a href="https://github.com/SHAHEED-AKEEL" target="_blank" rel="noopener noreferrer" class="link-tag">GitHub</a>
+                <span class="dot-sep">•</span>
+                <a href="http://www.linkedin.com/in/mohammed-shaheed-akeel" target="_blank" rel="noopener noreferrer" class="link-tag">LinkedIn</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Form -->
+        <div class="contact-form-wrapper">
+          <form class="contact-form" id="contactForm">
+            <h3 class="form-title">Send a Direct Message</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="formName">Your Name</label>
+                <input type="text" id="formName" required placeholder="e.g. Alex Morgan" autocomplete="name">
+              </div>
+              <div class="form-group">
+                <label for="formEmail">Email Address</label>
+                <input type="email" id="formEmail" required placeholder="alex@company.com" autocomplete="email">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="formSubject">Subject / Role Opportunity</label>
+              <input type="text" id="formSubject" required placeholder="Data Scientist Entry-Level Role / ML Project">
+            </div>
+            <div class="form-group">
+              <label for="formMessage">Your Message</label>
+              <textarea id="formMessage" rows="5" required placeholder="Hi Shaheed, we saw your portfolio and would like to discuss..."></textarea>
+            </div>
+            <button type="submit" class="form-submit-btn" id="formSubmitBtn">
+              <span>Send Message</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+            <div class="form-feedback" id="formFeedback" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <span class="footer-brand">Mohammed Shaheed Akeel</span>
+          <p class="footer-copy">Crafted with precision • Cursor-Tracking 3D Canvas Architecture</p>
+        </div>
+        <div class="footer-right">
+          <a href="#hero" class="back-to-top" aria-label="Back to top">
+            <span>Back to Top</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Interactive Resume Modal -->
+  <div class="modal-backdrop" id="resumeModal" role="dialog" aria-modal="true" aria-labelledby="resumeModalTitle" hidden>
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <h2 id="resumeModalTitle" class="modal-title">Mohammed Shaheed Akeel — Resume</h2>
+          <span class="modal-subtitle">Data Scientist | Machine Learning & Demand Forecasting</span>
+        </div>
+        <div class="modal-actions-group">
+          <a href="ShaheedAkeel_Resume.docx" download="ShaheedAkeel_DataScientist_Resume.docx" class="btn-modal-action" id="downloadDocxBtn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <span>Download .docx</span>
+          </a>
+          <button class="btn-modal-close" id="closeResumeModalBtn" aria-label="Close modal">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <div class="resume-sheet">
+          <!-- Resume Header -->
+          <div class="resume-header">
+            <h1 class="resume-name">Mohammed Shaheed Akeel</h1>
+            <p class="resume-headline">Data Scientist | Expert in Machine Learning and Demand Forecasting</p>
+            <div class="resume-contact-bar">
+              <span><strong>Phone:</strong> +91 9944898567</span>
+              <span>•</span>
+              <span><strong>Email:</strong> <a href="mailto:shahidshahidakeel@gmail.com">shahidshahidakeel@gmail.com</a></span>
+              <span>•</span>
+              <span><a href="https://github.com/SHAHEED-AKEEL" target="_blank">GitHub</a></span>
+              <span>•</span>
+              <span><a href="http://www.linkedin.com/in/mohammed-shaheed-akeel" target="_blank">LinkedIn</a></span>
+            </div>
+          </div>
+
+          <!-- Section: Career Objective -->
+          <div class="resume-section">
+            <h3 class="resume-sec-title">CAREER OBJECTIVE</h3>
+            <p class="resume-p">
+              A motivated Data Science graduate with a strong focus on Machine Learning and Artificial Intelligence, seeking an entry-level role to apply predictive modelling, data analysis, and algorithmic thinking to real-world problems. Eager to gain hands-on industry experience while continuously enhancing expertise in building scalable, data-driven AI solutions.
+            </p>
+          </div>
+
+          <!-- Section: Technical Skills -->
+          <div class="resume-section">
+            <h3 class="resume-sec-title">TECHNICAL SKILLS</h3>
+            <table class="resume-table">
+              <tr>
+                <td class="r-label">Languages & Tools:</td>
+                <td>Python, SQL, Streamlit, Git, Jupyter</td>
+              </tr>
+              <tr>
+                <td class="r-label">Machine Learning:</td>
+                <td>Linear Regression, Logistic Regression, Decision Trees, Random Forest, XGBoost, Time Series Forecasting, Clustering Algorithms, Model Evaluation & Tuning, SMOTE</td>
+              </tr>
+              <tr>
+                <td class="r-label">Deep Learning & GenAI:</td>
+                <td>Generative AI, Transformers, Large Language Models (LLMs), LangChain, Retrieval-Augmented Generation (RAG), FAISS, OpenAI API</td>
+              </tr>
+              <tr>
+                <td class="r-label">Data Analysis & Stats:</td>
+                <td>Probability & Statistics, Hypothesis Testing, Regression Analysis, Feature Engineering, EDA</td>
+              </tr>
+            </table>
+          </div>
+
+          <!-- Section: Projects -->
+          <div class="resume-section">
+            <h3 class="resume-sec-title">ACADEMIC & PERSONAL PROJECTS</h3>
+            
+            <div class="r-project-item">
+              <div class="r-proj-top">
+                <span class="r-proj-name">1. News Research Tool (NRT) — Semantic Question Answering</span>
+                <span class="r-proj-tools">Python, Streamlit, LangChain, OpenAI API, FAISS</span>
+              </div>
+              <ul class="r-bullets">
+                <li>Developed a Streamlit application for semantic question answering on news articles.</li>
+                <li>Implemented multi-URL ingestion, recursive text chunking, vector-based retrieval using FAISS, and a retrieval-augmented generation (RAG) pipeline.</li>
+                <li>Provided real-time context-aware answers with verified source references and zero hallucinations.</li>
+              </ul>
+            </div>
+
+            <div class="r-project-item">
+              <div class="r-proj-top">
+                <span class="r-proj-name">2. levixbiosciences — Enterprise Healthcare Website</span>
+                <span class="r-proj-tools">Website | React, JavaScript, Vite, TailwindCSS, Schema.org</span>
+              </div>
+              <ul class="r-bullets">
+                <li>Engineered and launched the official production website for LEVIX Bio Science Pvt Ltd (<a href="https://github.com/SHAHEED-AKEEL/levixbiosciences" target="_blank" rel="noopener noreferrer">github.com/SHAHEED-AKEEL/levixbiosciences</a> | <a href="https://levixbiosciences.com" target="_blank" rel="noopener noreferrer">levixbiosciences.com</a>).</li>
+                <li>Implemented interactive neurological and therapeutic formulation catalogs, doctor prescription verification workflows, and direct WhatsApp ordering.</li>
+                <li>Architected high-performance responsive UI optimized for Core Web Vitals, mobile devices, and search engine discoverability.</li>
+              </ul>
+            </div>
+
+            <div class="r-project-item">
+              <div class="r-proj-top">
+                <span class="r-proj-name">3. Time Series & Demand Forecasting</span>
+                <span class="r-proj-tools">Python, Pandas, Statsmodels, Prophet, XGBoost</span>
+              </div>
+              <ul class="r-bullets">
+                <li>Developed forecasting models on weekly sales data to analyze trends, seasonality, and demand cycles.</li>
+                <li>Implemented ARIMA/SARIMA, Facebook Prophet, and ML-based approaches with rolling and lag features.</li>
+                <li>Evaluated and tuned forecasts using rigorous RMSE and MAPE metrics.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Section: Education -->
+          <div class="resume-section">
+            <h3 class="resume-sec-title">EDUCATION</h3>
+            
+            <div class="r-edu-item">
+              <div class="r-edu-header">
+                <strong>Post Graduate Program in Data Science & Analytics</strong>
+                <span class="r-grade">Grade: B</span>
+              </div>
+              <p class="r-edu-sub">Imarticus Learning, Koramangala, Bengaluru</p>
+            </div>
+
+            <div class="r-edu-item">
+              <div class="r-edu-header">
+                <strong>Bachelor of Engineering (B.E.) in Computer Science</strong>
+                <span class="r-grade">Percentage: 79%</span>
+              </div>
+              <p class="r-edu-sub">Al-Ameen Engineering College | 2020 – 2024</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Application Logic -->
+  <script src="app.js"></script>
+</body>
+</html>
