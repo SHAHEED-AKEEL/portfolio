@@ -11,7 +11,7 @@ An award-winning luxury portfolio website for **Mohammed Shaheed Akeel** (Data S
 - **Circular Shortest-Path Angular Lerp (`lerpAngle`)**: Computes the cursor angle relative to the character face center using `Math.atan2(dy, dx)`. Sits on a fast response factor (`~0.26`), delivering smooth, butter-like continuous tracking in ~35ms with zero lag.
 - **Center Eye Contact Deadzone**: When the user hovers near the character's face (within ~12% screen radius), the canvas switches to `center.webp` where Mohammed looks directly into the visitor's eyes.
 - **Zero Runtime Video Seeking**: Completely avoids buggy HTML5 video seeking (`video.currentTime`) and CSS 3D transforms (`rotateX`, `rotateY`, `perspective`), ensuring rock-solid stability and zero double-face ghosting.
-- **Seamless Deep Crimson Palette**: The canvas and entire background seamlessly integrate with the `#4c0000` / `#120102` radial vignette.
+- **Seamless Deep Oceanic Turquoise Palette**: The canvas and entire background seamlessly integrate with the `#1c767a` / `#021316` radial vignette.
 
 ---
 
@@ -58,7 +58,7 @@ Alternatively, you can open `index.html` directly in any modern browser.
 
 ```
 ├── index.html                           # Main portfolio markup & semantic structure
-├── style.css                            # Luxury dark crimson CSS design system
+├── style.css                            # Luxury dark turquoise CSS design system
 ├── app.js                               # 60FPS canvas engine, lerpAngle, magnetic cursor
 ├── server.js                            # Zero-dependency local static file server
 ├── character.jpeg                       # High-resolution character portrait

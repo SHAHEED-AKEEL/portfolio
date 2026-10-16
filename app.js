@@ -173,8 +173,8 @@
     // DRAW EXACTLY ONE CRISP FRAME AT 100% OPACITY (ZERO GHOSTING)
     ctx.clearRect(0, 0, width, height);
 
-    // Seamless base fill matching video background (#4c0000)
-    ctx.fillStyle = '#4c0000';
+    // Seamless base fill matching canvas background (#1c767a)
+    ctx.fillStyle = '#1c767a';
     ctx.fillRect(0, 0, width, height);
 
     if (activeImage && activeImage.complete && activeImage.naturalWidth !== 0) {

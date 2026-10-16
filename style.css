@@ -1,25 +1,29 @@
 /* ==========================================================================
    PORTFOLIO DESIGN SYSTEM & STYLESHEET
    Mohammed Shaheed Akeel — Data Scientist & Machine Learning Engineer
-   Palette: Luxury Deep Crimson, Onyx & Crisp Pure White
+   Palette: Luxury Deep Oceanic Turquoise, Obsidian & Crisp Pure White
    ========================================================================== */
 
 :root {
-  --bg-dark: #120102;
-  --bg-crimson: #4c0000;
-  --bg-crimson-deep: #320001;
-  --bg-crimson-glow: #960605;
+  --bg-dark: #021316;
+  --bg-turquoise: #1c767a;
+  --bg-turquoise-deep: #052c31;
+  --bg-turquoise-glow: #3ca8ad;
   --surface-card: rgba(255, 255, 255, 0.04);
   --surface-card-hover: rgba(255, 255, 255, 0.08);
-  --surface-pill: rgba(30, 2, 4, 0.65);
+  --surface-pill: rgba(2, 26, 30, 0.72);
   --border-subtle: rgba(255, 255, 255, 0.10);
-  --border-focus: rgba(255, 77, 90, 0.45);
+  --border-focus: rgba(20, 241, 217, 0.45);
   --border-active: rgba(255, 255, 255, 0.25);
   --text-primary: #ffffff;
   --text-secondary: rgba(255, 255, 255, 0.78);
   --text-muted: rgba(255, 255, 255, 0.48);
-  --accent-red: #ff3344;
-  --accent-crimson: #c41018;
+  --accent-turquoise: #14f1d9;
+  --accent-turquoise-glow: #00f5d4;
+  --accent-turquoise-deep: #0d9488;
+  --accent-red: #14f1d9; /* backward compatibility alias */
+  --accent-crimson: #0d9488; /* backward compatibility alias */
+  --bg-crimson: #042e35; /* backward compatibility alias */
   --font-display: 'Dancing Script', cursive;
   --font-sans: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
@@ -41,7 +45,7 @@ html {
 
 body {
   font-family: var(--font-sans);
-  background: radial-gradient(circle at 50% 25%, #7a080e 0%, #4c0000 35%, #250001 70%, #120102 100%);
+  background: radial-gradient(circle at 50% 25%, #23858a 0%, #1c767a 35%, #073a41 70%, #021316 100%);
   background-attachment: fixed;
   color: var(--text-primary);
   min-height: 100vh;
@@ -176,7 +180,7 @@ body {
   align-items: center;
   gap: 6px;
   background: #ffffff;
-  color: #1a0103;
+  color: #021a1e;
   border: none;
   padding: 8px 16px;
   border-radius: 9999px;
@@ -205,7 +209,7 @@ body {
   height: 100vh;
   min-height: 640px;
   overflow: hidden;
-  background-color: var(--bg-crimson);
+  background-color: var(--bg-turquoise);
   display: flex;
   align-items: flex-end;
 }
@@ -217,7 +221,7 @@ body {
   width: 100%;
   height: 100%;
   z-index: 1;
-  background: radial-gradient(circle at 50% 45%, #920b12 0%, #4c0000 45%, #300102 75%, #180001 100%);
+  background: radial-gradient(circle at 50% 45%, #3ca8ad 0%, #1c767a 45%, #052c31 75%, #021316 100%);
 }
 
 .hero-canvas {
@@ -234,7 +238,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 16px;
-  background: rgba(24, 0, 1, 0.85);
+  background: rgba(1, 19, 22, 0.88);
   backdrop-filter: blur(12px);
   z-index: 20;
   transition: opacity 0.6s ease, visibility 0.6s ease;
@@ -336,7 +340,7 @@ body {
 }
 
 .role-separator {
-  color: var(--accent-red);
+  color: var(--accent-turquoise);
 }
 
 .hero-bio {
@@ -372,7 +376,7 @@ body {
 
 .btn-solid-white {
   background-color: #ffffff;
-  color: #1a0103;
+  color: #021a1e;
   border: 1px solid #ffffff;
   box-shadow: 0 8px 24px rgba(255, 255, 255, 0.25);
 }
@@ -409,7 +413,7 @@ body {
   align-items: center;
   gap: 12px;
   padding: 10px 16px;
-  background: rgba(20, 1, 2, 0.65);
+  background: rgba(2, 22, 26, 0.72);
   backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 16px;
@@ -417,7 +421,7 @@ body {
 }
 
 .hint-icon {
-  color: var(--accent-red);
+  color: var(--accent-turquoise);
   display: flex;
   align-items: center;
 }
@@ -495,7 +499,7 @@ body {
 .main-content {
   position: relative;
   z-index: 20;
-  background: linear-gradient(180deg, rgba(35, 1, 3, 0.85) 0%, rgba(18, 1, 2, 0.96) 200px, #120102 100%);
+  background: linear-gradient(180deg, rgba(3, 34, 39, 0.88) 0%, rgba(2, 20, 24, 0.97) 200px, #021316 100%);
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   padding: 80px 0 120px 0;
 }
@@ -516,11 +520,11 @@ body {
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.18em;
-  color: var(--accent-red);
-  background: rgba(255, 51, 68, 0.1);
+  color: var(--accent-turquoise);
+  background: rgba(20, 241, 217, 0.1);
   padding: 5px 12px;
   border-radius: 9999px;
-  border: 1px solid rgba(255, 51, 68, 0.25);
+  border: 1px solid rgba(20, 241, 217, 0.25);
   margin-bottom: 14px;
 }
 
@@ -564,7 +568,7 @@ body {
   transform: translateY(-6px);
   border-color: var(--border-focus);
   background: var(--surface-card-hover);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 30px rgba(255, 51, 68, 0.12);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 30px rgba(20, 241, 217, 0.12);
 }
 
 .project-card-glow {
@@ -573,7 +577,7 @@ body {
   right: -60px;
   width: 140px;
   height: 140px;
-  background: radial-gradient(circle, rgba(255, 51, 68, 0.25) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(20, 241, 217, 0.25) 0%, transparent 70%);
   border-radius: 50%;
   pointer-events: none;
 }
@@ -640,7 +644,7 @@ body {
 
 .project-tagline {
   font-size: 13px;
-  color: var(--accent-red);
+  color: var(--accent-turquoise);
   font-weight: 600;
   margin-bottom: 14px;
 }
@@ -733,7 +737,7 @@ body {
   height: 180px;
   border-radius: 50%;
   padding: 6px;
-  background: linear-gradient(135deg, var(--accent-red) 0%, rgba(255, 255, 255, 0.2) 100%);
+  background: linear-gradient(135deg, var(--accent-turquoise) 0%, rgba(255, 255, 255, 0.2) 100%);
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
   margin-bottom: 22px;
 }
@@ -743,7 +747,7 @@ body {
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
-  background-color: var(--bg-crimson);
+  background-color: var(--bg-turquoise);
 }
 
 .status-badge {
@@ -754,7 +758,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: rgba(20, 2, 4, 0.9);
+  background: rgba(2, 24, 28, 0.9);
   border: 1px solid rgba(34, 197, 94, 0.4);
   padding: 4px 12px;
   border-radius: 9999px;
@@ -781,7 +785,7 @@ body {
 
 .profile-role {
   font-size: 14px;
-  color: var(--accent-red);
+  color: var(--accent-turquoise);
   font-weight: 600;
   margin-bottom: 8px;
 }
@@ -830,7 +834,7 @@ body {
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.16em;
-  color: var(--accent-red);
+  color: var(--accent-turquoise);
   margin-bottom: 12px;
 }
 
@@ -893,15 +897,15 @@ body {
   top: 4px;
   width: 10px;
   height: 10px;
-  background-color: var(--accent-red);
+  background-color: var(--accent-turquoise);
   border-radius: 50%;
-  box-shadow: 0 0 10px var(--accent-red);
+  box-shadow: 0 0 10px var(--accent-turquoise);
 }
 
 .timeline-year {
   font-family: var(--font-mono);
   font-size: 11px;
-  color: var(--accent-red);
+  color: var(--accent-turquoise);
   margin-bottom: 2px;
 }
 
@@ -961,10 +965,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 51, 68, 0.12);
-  border: 1px solid rgba(255, 51, 68, 0.3);
+  background: rgba(20, 241, 217, 0.12);
+  border: 1px solid rgba(20, 241, 217, 0.3);
   border-radius: 12px;
-  color: var(--accent-red);
+  color: var(--accent-turquoise);
   margin-bottom: 18px;
 }
 
@@ -1000,7 +1004,7 @@ body {
   content: "•";
   position: absolute;
   left: 0;
-  color: var(--accent-red);
+  color: var(--accent-turquoise);
   font-weight: bold;
 }
 
@@ -1057,7 +1061,7 @@ body {
 .contact-type {
   font-family: var(--font-mono);
   font-size: 10px;
-  color: var(--accent-red);
+  color: var(--accent-turquoise);
   letter-spacing: 0.12em;
   font-weight: 700;
   margin-bottom: 2px;
@@ -1072,7 +1076,7 @@ body {
 }
 
 .contact-val:hover {
-  color: var(--accent-red);
+  color: var(--accent-turquoise);
 }
 
 .social-links-inline {
@@ -1089,7 +1093,7 @@ body {
 }
 
 .social-links-inline .link-tag:hover {
-  color: var(--accent-red);
+  color: var(--accent-turquoise);
 }
 
 .dot-sep {
@@ -1113,7 +1117,7 @@ body {
 
 .copy-pill-btn:hover {
   background: #ffffff;
-  color: #120102;
+  color: #021a1e;
   border-color: #ffffff;
 }
 
@@ -1174,7 +1178,7 @@ body {
 
 .form-group input:focus, .form-group textarea:focus {
   border-color: var(--border-focus);
-  box-shadow: 0 0 0 3px rgba(255, 51, 68, 0.15);
+  box-shadow: 0 0 0 3px rgba(20, 241, 217, 0.15);
   background: rgba(0, 0, 0, 0.5);
 }
 
@@ -1188,7 +1192,7 @@ body {
   align-items: center;
   gap: 10px;
   background: #ffffff;
-  color: #120102;
+  color: #021a1e;
   border: none;
   border-radius: 12px;
   padding: 14px 28px;
@@ -1225,7 +1229,7 @@ body {
 .site-footer {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   padding: 40px max(4vw, 24px);
-  background: rgba(10, 0, 1, 0.95);
+  background: rgba(2, 16, 19, 0.96);
 }
 
 .footer-inner {
@@ -1296,10 +1300,10 @@ body {
   width: 100%;
   max-width: 860px;
   max-height: 90vh;
-  background: #180103;
+  background: #03181c;
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 24px;
-  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.8), 0 0 40px rgba(255, 51, 68, 0.15);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.8), 0 0 40px rgba(20, 241, 217, 0.15);
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -1319,7 +1323,7 @@ body {
 
 .modal-header {
   padding: 20px 28px;
-  background: rgba(30, 2, 4, 0.9);
+  background: rgba(3, 27, 32, 0.92);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
   justify-content: space-between;
@@ -1335,7 +1339,7 @@ body {
 
 .modal-title-group .modal-subtitle {
   font-size: 12px;
-  color: var(--accent-red);
+  color: var(--accent-turquoise);
   font-family: var(--font-mono);
 }
 
@@ -1350,7 +1354,7 @@ body {
   align-items: center;
   gap: 8px;
   background: #ffffff;
-  color: #120102;
+  color: #021a1e;
   text-decoration: none;
   font-size: 12px;
   font-weight: 700;
@@ -1386,18 +1390,18 @@ body {
 .modal-body {
   padding: 30px;
   overflow-y: auto;
-  background: #0f0001;
+  background: #021114;
 }
 
 .resume-sheet {
-  background: #150102;
+  background: #03181c;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 16px;
   padding: 36px;
 }
 
 .resume-header {
-  border-bottom: 1.5px solid rgba(255, 51, 68, 0.35);
+  border-bottom: 1.5px solid rgba(20, 241, 217, 0.35);
   padding-bottom: 20px;
   margin-bottom: 24px;
 }
@@ -1412,7 +1416,7 @@ body {
 
 .resume-headline {
   font-size: 14px;
-  color: var(--accent-red);
+  color: var(--accent-turquoise);
   font-weight: 600;
   margin-bottom: 10px;
 }
@@ -1491,7 +1495,7 @@ body {
 .r-proj-tools {
   font-family: var(--font-mono);
   font-size: 11px;
-  color: var(--accent-red);
+  color: var(--accent-turquoise);
 }
 
 .r-bullets {
@@ -1517,8 +1521,8 @@ body {
 .r-grade {
   font-family: var(--font-mono);
   font-size: 11px;
-  background: rgba(255, 51, 68, 0.15);
-  color: var(--accent-red);
+  background: rgba(20, 241, 217, 0.15);
+  color: var(--accent-turquoise);
   padding: 2px 8px;
   border-radius: 4px;
 }
@@ -1541,7 +1545,7 @@ body {
 
 .toast {
   background: #ffffff;
-  color: #120102;
+  color: #021a1e;
   font-weight: 600;
   font-size: 13px;
   padding: 12px 20px;
